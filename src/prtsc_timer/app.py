@@ -19,8 +19,7 @@ from gi.repository import Adw, Gio, GLib, Gtk  # noqa: E402
 from .core import DELAYS, CaptureResult, delay_ms, status_text  # noqa: E402
 from .portal import request_screenshot  # noqa: E402
 
-APP_ID = "io.github.nasim.PrtScTimer"
-
+APP_ID = "io.github.nasimhuq.PrtScTimer"
 
 # ---- Widget builders (return new widgets, no global state) -----------------
 
@@ -113,6 +112,4 @@ def on_activate(app: Adw.Application) -> None:
 def main() -> int:
     app = Adw.Application(application_id=APP_ID)
     app.connect("activate", on_activate)
-    exit_code = app.run(None)
-    print("App exited with code:", exit_code)
-    return exit_code
+    return app.run(None)

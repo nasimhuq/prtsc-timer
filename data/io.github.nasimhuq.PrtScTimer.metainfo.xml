@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.nasimhuq.PrtScTimer</id>
+  <name>PrtSc Timer</name>
+  <summary>Take a screenshot after a countdown</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>PrtSc Timer lets you set a countdown before taking a screenshot, giving you time to arrange windows or menus before the capture happens.</p>
+  </description>
+  <launchable type="desktop-id">io.github.nasimhuq.PrtScTimer.desktop</launchable>
+  <url type="homepage">https://github.com/nasimhuq/prtsc-timer</url>
+  <url type="bugtracker">https://github.com/nasimhuq/prtsc-timer/issues</url>
+  <developer id="io.github.nasimhuq">
+    <name>nasimhuq</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/nasimhuq/prtsc-timer/main/data/screenshots/main-window.png</image>
+      <caption>Choose an immediate capture or a 5 or 10 second delay</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/nasimhuq/prtsc-timer/main/data/screenshots/capture-saved.png</image>
+      <caption>The saved screenshot's location is shown after capture</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.0.0" date="2026-09-27"/>
+  </releases>
+</component>

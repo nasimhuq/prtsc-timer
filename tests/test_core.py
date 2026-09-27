@@ -1,8 +1,9 @@
-from prt_sc_app.core import (
+from prtsc_timer.core import (
     Cancelled,
     Failed,
     Saved,
     delay_ms,
+    document_id,
     make_token,
     parse_response,
     request_handle,
@@ -34,6 +35,12 @@ def test_options():
 
 def test_uri_to_path_decodes():
     assert uri_to_path("file:///home/n/My%20Shot.png") == "/home/n/My Shot.png"
+
+
+def test_document_id():
+    assert document_id("/run/user/1000/doc/1a2b3c4d/Shot.png") == "1a2b3c4d"
+    assert document_id("/run/flatpak/doc/1a2b3c4d/Shot.png") == "1a2b3c4d"
+    assert document_id("/home/n/Pictures/Shot.png") is None
 
 
 def test_parse_response():

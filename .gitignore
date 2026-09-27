@@ -19,3 +19,5 @@ wheels/
 # IDEs and editors
 .vscode/
 .idea/
+.flatpak-builder/
+build-dir/

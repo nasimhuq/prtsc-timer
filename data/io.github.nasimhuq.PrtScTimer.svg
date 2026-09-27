@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- app tile background -->
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="url(#bg)"/>
+
+  <!-- camera viewfinder bump -->
+  <rect x="50" y="34" width="28" height="14" rx="5" fill="#ffffff"/>
+
+  <!-- camera body -->
+  <rect x="26" y="44" width="76" height="54" rx="12" fill="#ffffff"/>
+
+  <!-- lens outer ring -->
+  <circle cx="64" cy="72" r="19" fill="#4c1d95"/>
+  <circle cx="64" cy="72" r="19" fill="none" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- clock/countdown hands inside the lens -->
+  <line x1="64" y1="72" x2="64" y2="60" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="64" y1="72" x2="73" y2="72" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="64" cy="72" r="2.5" fill="#ffffff"/>
+
+  <!-- shutter/flash accent -->
+  <circle cx="90" cy="52" r="4.5" fill="#ffffff"/>
+</svg>

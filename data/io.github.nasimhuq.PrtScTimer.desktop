@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PrtSc Timer
+Comment=Take a screenshot after a countdown
+Exec=prtsc-timer
+Icon=io.github.nasimhuq.PrtScTimer
+Terminal=false
+Categories=Utility;
+StartupNotify=true

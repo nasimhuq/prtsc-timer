@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from urllib.parse import unquote, urlparse
 
@@ -68,6 +69,16 @@ def screenshot_options(token: str, interactive: bool = True) -> dict[str, tuple[
 def uri_to_path(uri: str) -> str:
     """'file:///home/a/My%20Shot.png' -> '/home/a/My Shot.png'."""
     return unquote(urlparse(uri).path)
+
+
+def document_id(path: str) -> str | None:
+    """'/run/user/1000/doc/1a2b3c4d/Shot.png' -> '1a2b3c4d'; None for ordinary paths.
+
+    Sandboxed apps receive files through the document portal's FUSE mount
+    rather than their real location.
+    """
+    match = re.match(r"^/run/(?:user/\d+|flatpak)/doc/([^/]+)/", path)
+    return match.group(1) if match else None
 
 
 def parse_response(code: int, results: dict) -> CaptureResult:
