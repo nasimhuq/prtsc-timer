@@ -19,7 +19,7 @@ from gi.repository import Adw, Gio, GLib, Gtk  # noqa: E402
 from .core import DELAYS, CaptureResult, delay_ms, status_text  # noqa: E402
 from .portal import request_screenshot  # noqa: E402
 
-APP_ID = "io.github.nasimhuq.PrtScTimer"
+APP_ID = "io.github.nasimhuq.prtsc_timer"
 
 # ---- Widget builders (return new widgets, no global state) -----------------
 

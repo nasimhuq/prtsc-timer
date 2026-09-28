@@ -2,8 +2,8 @@
 Type=Application
 Name=PrtSc Timer
 Comment=Take a screenshot after a countdown
-Exec=prtsc-timer
-Icon=io.github.nasimhuq.PrtScTimer
+Exec=prtsc_timer
+Icon=io.github.nasimhuq.prtsc_timer
 Terminal=false
 Categories=Utility;
 StartupNotify=true
